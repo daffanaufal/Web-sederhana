@@ -1,0 +1,123 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 215, 198);}
+
+body~p{
+    text-indent: 2em;
+    line-height: 2em;
+    text-align: justify;
+}
+
+  nav {
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+  
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+  }
+
+  
+
+nav a{
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+}
+nav a:hover{
+    padding: 1mm;
+    font-weight: bold;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    color:black;
+    font-family: sans-serif;
+    border-radius: 10px 5px 10px 5px;
+}
+
+main {
+    padding: 20px;
+ 
+  display: flex;
+  gap: 1.5rem;
+  }
+
+ aside {
+    flex: 1;
+  }
+
+
+footer {
+    padding: 20px;
+    color: black;
+    background-color: rgb(223, 211, 195);
+    text-align: center;
+    font-weight: bold;
+ }
+
+ * {
+    box-sizing: border-box;
+  }
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+.judul {
+    padding: 60px;
+    background-image: url(../assets/kota.jpg);
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.profil header{
+    text-align: center;  
+ }
+
+
+.featured-image {
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .profil img {
+    width: 200px;
+ }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+ }
+
+ @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
